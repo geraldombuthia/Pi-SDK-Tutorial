@@ -8,9 +8,8 @@ int main() {
     stdio_init_all();
 
     sleep_ms(2000);
-    printf("GO\n");
     for(;;) {
-        printf("Count %d\n", i++);
+        printf("%d\n",i++);
         sleep_ms(DELAY);
     }
 }

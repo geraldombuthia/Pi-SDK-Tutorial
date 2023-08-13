@@ -1,0 +1,328 @@
+$cmake ..
+
+cmake ..
+
+-- The C compiler identification is GNU 11.4.0
+
+-- The CXX compiler identification is GNU 11.4.0
+
+-- The ASM compiler identification is GNU
+
+-- Found assembler: /usr/bin/cc
+
+-- Detecting C compiler ABI info
+
+-- Detecting C compiler ABI info - done
+
+-- Check for working C compiler: /usr/bin/cc - skipped
+
+-- Detecting C compile features
+
+-- Detecting C compile features - done
+
+-- Detecting CXX compiler ABI info
+
+-- Detecting CXX compiler ABI info - done
+
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+
+-- Detecting CXX compile features
+
+-- Detecting CXX compile features - done
+
+Using PICO_SDK_PATH from environment ('/opt/pico-sdk')
+
+PICO_SDK_PATH is /opt/pico-sdk
+
+Defaulting PICO_PLATFORM to rp2040 since not specified.
+
+Defaulting PICO platform compiler to pico_arm_gcc since not specified.
+
+-- Defaulting build type to 'Release' since not specified.
+
+PICO compiler is pico_arm_gcc
+
+Build type is Release
+
+Defaulting PICO target board to pico since not specified.
+
+Using board configuration from /opt/pico-sdk/src/boards/include/boards/pico.h
+
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+
+TinyUSB available at /opt/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040; enabling build support for USB.
+
+BTstack available at /opt/pico-sdk/lib/btstack
+
+lwIP available at /opt/pico-sdk/lib/lwip
+
+mbedtls available at /opt/pico-sdk/lib/mbedtls
+
+-- Configuring done (5.9s)
+
+-- Generating done (0.1s)
+
+-- Build files have been written to: /home/gerald/Embedded/adc/build
+
+
+
+$make
+
+1%] Building ASM object pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S: Assembler messages:
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:89: Error: unknown pseudo-op: `.syntax'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:89: Error: unknown pseudo-op: `.cpu'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:89: Error: unknown pseudo-op: `.thumb'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:98: Error: unknown pseudo-op: `.thumb_func'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:99: Error: invalid char '{' beginning operand 1 `{lr}'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:105: Error: no such instruction: `ldr r3,=0x40020000'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:106: Warning: `r0' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:106: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:107: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:108: Error: no such instruction: `ldr r0,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:109: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:109: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:110: Error: no such instruction: `bics r0,r1'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:111: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:112: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:113: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:114: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:116: Error: no such instruction: `ldr r3,=0x18000000'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:119: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:119: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:120: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:123: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:123: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:124: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:132: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:132: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:133: Warning: `r2' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:133: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:134: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:145: Error: no such instruction: `ldr r1,=((7<<16)|(0x0<<8))'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:146: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:149: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:149: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:150: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:153: Warning: `r0' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:153: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:154: Error: no such instruction: `bl read_flash_sreg'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:155: Warning: `r2' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:155: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:156: Error: too many memory references for `cmp'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:157: Error: no such instruction: `beq skip_sreg_programming'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:160: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:160: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:161: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:164: Error: no such instruction: `bl wait_ssi_ready'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:165: Error: no such instruction: `ldr r1,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:168: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:168: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:169: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:170: Warning: `r0' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:170: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:171: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:172: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:174: Error: no such instruction: `bl wait_ssi_ready'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:175: Error: no such instruction: `ldr r1,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:176: Error: no such instruction: `ldr r1,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:177: Error: no such instruction: `ldr r1,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:181: Warning: `r0' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:181: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:182: Error: no such instruction: `bl read_flash_sreg'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:183: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:183: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:184: Error: no such instruction: `tst r0,r1'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:185: Error: no such instruction: `bne 1b'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:190: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:190: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:191: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:208: Error: no such instruction: `ldr r1,=((0x2<<21)|(31<<16)|(0x3<<8))'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:209: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:211: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:211: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:212: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:222: Error: no such instruction: `ldr r1,=((8<<2)|(4<<11)|(0x2<<8)|(0x1<<0))'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:223: Error: no such instruction: `ldr r0,=(0x18000000+0x000000f4)'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:224: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:226: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:226: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:227: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:229: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:229: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:230: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:231: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:231: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:232: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:235: Error: no such instruction: `bl wait_ssi_ready'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:241: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:241: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:242: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:259: Error: no such instruction: `ldr r1,=((0xa0<<24)|(8<<2)|(4<<11)|(0x0<<8)|(0x2<<0))'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:260: Error: no such instruction: `ldr r0,=(0x18000000+0x000000f4)'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:261: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:263: Warning: `r1' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:263: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:264: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:16: Error: invalid char '{' beginning operand 1 `{r0}'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:17: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:18: Error: no such instruction: `beq vector_into_flash'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:19: Error: no such instruction: `bx r0'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:21: Error: no such instruction: `ldr r0,=(0x10000000+0x100)'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:22: Error: no such instruction: `ldr r1,=(0xe0000000+0x0000ed08)'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:23: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:24: Error: no such instruction: `ldmia r0,{r0,r1}'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:25: Error: no such instruction: `msr msp,r0'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/exit_from_boot2.S:26: Error: no such instruction: `bx r1'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:11: Error: invalid char '{' beginning operand 1 `{r0'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:16: Error: no such instruction: `ldr r1,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:17: Warning: `r0' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:17: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:18: Error: no such instruction: `tst r1,r0'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:19: Error: no such instruction: `beq 1b'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:20: Warning: `r0' is not valid here (expected `(%rsi)')
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:20: Error: expecting operand after ','; got nothing
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:21: Error: no such instruction: `tst r1,r0'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:22: Error: no such instruction: `bne 1b'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S:24: Error: invalid char '{' beginning operand 1 `{r0'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:16: Error: unknown pseudo-op: `.thumb_func'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:18: Error: invalid char '{' beginning operand 1 `{r1'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:19: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:21: Error: too many memory references for `str'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:23: Error: no such instruction: `bl wait_ssi_ready'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:25: Error: no such instruction: `ldr r0,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:26: Error: no such instruction: `ldr r0,[r3,'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S:28: Error: invalid char '{' beginning operand 1 `{r1'
+
+/opt/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S:280: Error: unknown pseudo-op: `.ltorg'
+
+make[2]: *** [pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make:75: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o] Error 1
+
+make[1]: *** [CMakeFiles/Makefile2:1543: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all] Error 2
+
+make: *** [Makefile:91: all] Error 2
+

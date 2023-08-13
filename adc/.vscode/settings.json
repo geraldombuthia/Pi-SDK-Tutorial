@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "AIN.C": "cpp",
+    "gpio.h": "c"
+  }
+}
